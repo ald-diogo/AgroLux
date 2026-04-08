@@ -55,15 +55,21 @@
       position: relative;
       overflow: hidden;
     }
-    .manual-cover::before {
-      content: "🌾";
-      font-size: 12rem;
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      opacity: 0.1;
-      pointer-events: none;
-    }
+  .manual-cover::before {
+  content: "";
+  background-image: url("images/Lux-logo-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  pointer-events: none;
+}
     .cover-title {
       font-size: 3.5rem;
       font-weight: 800;
@@ -248,9 +254,9 @@
 <!-- Navbar simplificada (apenas identidade e controlos) -->
 <nav class="navbar navbar-expand-lg navbar-lux fixed-top" style="font-family: 'Times New Roman', Times, serif;">
   <div class="container">
-    <a class="navbar-brand" href="index.html">🌿 AgroLux</a>
+    <a class="navbar-brand" href="index.html">🌿AgroLux</a>
     <div class="ms-auto d-flex gap-3 align-items-center">
-      <a href="index1.html" class="btn btn-outline-home"><i class="bi bi-house-door"></i> <span id="backHomeText">Voltar ao Início</span></a>
+      <a href="index.html" class="btn btn-outline-home"><i class="bi bi-house-door"></i> <span id="backHomeText">Voltar ao Início</span></a>
       <div class="theme-switch"><label><input type="checkbox" id="darkModeToggle"><span class="slider-round"></span></label></div>
       <div class="lang-badge" id="langSwitch"><i class="bi bi-globe2"></i> <span id="langLabel">PT</span></div>
     </div>
